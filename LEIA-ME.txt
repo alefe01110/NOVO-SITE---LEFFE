@@ -1,43 +1,20 @@
-LEFFE.DSR — ARQUIVOS COMPLETOS DO SITE
+LEFFE.DSR — PUBLICAÇÃO NA VERCEL
 
-COMO PUBLICAR
-1. Extraia o ZIP. Dentro dele está a pasta LEFFE-DSR-publicar.
-2. Envie todo o conteúdo dessa pasta para a pasta pública da sua hospedagem
-   (geralmente public_html, www ou a pasta indicada pelo provedor).
-3. O index.html deve ficar diretamente na pasta pública, ao lado dos arquivos
-   CSS e JavaScript e da pasta assets. Preserve os nomes e a estrutura.
-4. Configure o domínio no painel da sua hospedagem e ative HTTPS.
+A publicação verificada retornou 404 para todas as imagens do portfólio,
+para o logo e para a tabela. Os arquivos CSS e JavaScript carregaram.
 
-O site usa HTML, CSS e JavaScript. Não precisa de instalação, npm, banco de
-dados, servidor Node ou etapa de compilação para ser publicado.
-As imagens e fontes já estão incluídas.
+1. Extraia LEFFE-DSR-vercel.zip.
+2. No repositório ligado à Vercel, coloque TODOS os arquivos extraídos
+   na raiz do projeto, incluindo a pasta assets e todas as subpastas.
+   Não envie apenas os arquivos HTML, CSS e JavaScript.
+3. Preserve a estrutura: index.html e assets devem estar lado a lado.
+   Exemplo: assets/portfolio/tolentino.jpg.
+4. Confirme as alterações no repositório e aguarde a nova publicação.
+   Se usar upload ou CLI, envie a pasta extraída completa.
+5. Após publicar, abra:
+   https://sitelffe.vercel.app/assets/portfolio/tolentino.jpg
+   Esse endereço deve exibir a arte da pizza.
 
-PARA EDITAR
-index.html: apresentação, conteúdo e estrutura das seções.
-app.js: preços, pacotes, cálculo e mensagem do orçamento no WhatsApp.
-styles.css: aparência principal e layout responsivo.
-portfolio.css e portfolio.js: portfólio, ampliação e carrosséis.
-motion.css, motion.js e motion-settings.js: animações e movimentos automáticos.
-assets/: logotipos, portfólio, tabela original e fontes com suas licenças.
-
-CONTATOS CONFIGURADOS
-WhatsApp: 55 38 99139-7160
-Instagram: @leffe.dsr
-Ao trocar o número, procure 5538991397160 em index.html e app.js.
-
-ORÇAMENTOS
-O formulário calcula uma estimativa no navegador e abre o WhatsApp com a
-mensagem pronta. O visitante revisa e envia. Não há cobrança automática,
-cadastro de clientes ou armazenamento de pedidos em um servidor próprio.
-
-ANIMAÇÕES
-As animações do site iniciam automaticamente. Os controles dos carrosséis
-permitem explorar as artes e pausar somente o deslocamento do carrossel.
-
-REVISÃO ANTES DO LANÇAMENTO
-Confirme valores, contatos e informações comerciais. Quando registrar o
-domínio, configure os metadados de compartilhamento conforme o endereço final.
-A versão final não inclui uma seção de depoimentos ou comentários de clientes.
-
-O acesso privado do link Sites depende da plataforma. O pacote entregue pode
-ser hospedado separadamente em uma hospedagem estática ou convencional.
+Este pacote contém os arquivos diretamente na raiz do ZIP.
+Não precisa de npm ou compilação. A configuração vercel.json identifica
+este projeto como um site estático e usa a pasta raiz como saída.
